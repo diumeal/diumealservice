@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIU Meal Service</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="DIU Meal Service Logo" class="header-logo"> DIU Meal Service
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" aria-current="page" href="#home">Home</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#packages">Package</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#socials">Follow Us</a> </li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="notification-banner bg-info text-white py-2 text-center">
+        <div class="container">
+            <marquee behavior="scroll" direction="left">
+                Our New Offer! 5% off on any package! For a limited time. message for details: 01327282082(WhatsApp)
+            </marquee> </div>
+    </div>
+
+    <main>
+        <section id="home" class="py-5 text-center hero-section d-flex align-items-center">
+            <div class="container">
+                <h1 class="display-4 text-white">Welcome to DIU Meal Service!</h1> <p class="lead text-white">DIU Meal Service -ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি কমিউনিটি এবং এর বাইরেও পুষ্টিকর, সুস্বাদু এবং সাশ্রয়ী মূল্যের খাবার সরবরাহ করতে প্রতিশ্রুতিবদ্ধ। আমরা শিক্ষাজীবন ও পেশাগত জীবনের ব্যস্ততা বুঝি, তাই আপনার সময় বাঁচাতে এবং প্রতিদিন স্বাস্থ্যকর খাবার নিশ্চিত করতে আমরা বিভিন্ন ধরনের যত্ন সহকারে তৈরি খাবারের প্যাকেজ অফার করি। সুষম দৈনিক খাবার থেকে শুরু করে প্রিমিয়াম বিকল্প এবং ফ্যামিলি প্যাক পর্যন্ত, আমাদের পরিষেবা স্বাস্থ্যবিধি, বৈচিত্র্য এবং সুবিধার উপর গুরুত্ব দেয়, যা স্বাস্থ্যকর খাবারকে সহজ করে তোলে। মানসম্মত ও সুস্বাদু খাবার দিয়ে আপনার দিনকে সতেজ রাখতে আজই বেছে নিন DIU Meal Service!</p> </div>
+        </section>
+
+        <section id="promotional-banner" class="py-5 promotional-banner-section text-center">
+            <div class="container">
+                <h2 class="mb-4">Special Offer!</h2> <p class="lead mb-4">গ্র্যান্ড ওপেনিং অফার!
+                    আমাদের নতুন গ্রাহকদের জন্য বিশেষ ছাড়!
+                    সকল প্যাকেজে ৫% ছাড়!
+                    সীমিত সময়ের জন্য প্রযোজ্য। বিস্তারিত জানতে যোগাযোগ করুন:
+                    WhatsApp: 01327-282082</p> <a href="#packages" class="btn btn-warning btn-lg">View Offer</a> </div>
+        </section>
+
+        
+
+        <section id="packages" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Packages</h2> <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm package-card">
+                            <img src="silver.jpg" class="card-img-top package-img" alt="Package 1 Image" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Package 1: SILVER</h5> <p class="card-text">Nutritious food for families at an affordable price.</p> <div class="mt-auto">
+                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package1" data-image="silver.jpg">View Details</button> <a href="https://forms.gle/yhjunvNngnLVT4p8A" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a> <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%201%20(Standard%20Meal)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm package-card">
+                            <img src="golden.jpg" class="card-img-top package-img" alt="Package 2 Image" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Package 2: GOLDEN</h5> <p class="card-text">Daily balanced and healthy meals.</p> <div class="mt-auto">
+                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package2" data-image="golden.jpg">View Details</button> <a href="https://forms.gle/Yamb8DfmaPAXAFCx6" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a> <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%202%20(Premium%20Deal)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm package-card">
+                            <img src="platinium.jpg" class="card-img-top package-img" alt="Package 3 Image" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package3">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Package 3: PLATINIUM</h5> <p class="card-text">High-quality food with extra benefits.</p> <div class="mt-auto">
+                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package3" data-image="platinium.jpg">View Details</button> <a href="https://forms.gle/2FB1X7gwGD23hjwU8" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a> <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%203%20(Family%20Pack)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="food" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Food Menu</h2> <div class="row">
+                    <div class="col-md-6 offset-md-3 text-center">
+                        <p>You can add descriptions, images, and price lists of our various foods here.</p> </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="socials" class="py-5 bg-dark text-white text-center">
+            <div class="container">
+                <h2 class="mb-4">Join Us on Social Media!</h2> <div class="d-flex justify-content-center flex-wrap">
+                    <a href="https://www.facebook.com/diumealservice/" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a> <a href="https://www.youtube.com/channel/UCw4XHQJ03DgyooNOkzMBciw" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
+                        <i class="fab fa-youtube me-2"></i> YouTube
+                    </a> <a href="https://www.tiktok.com/@daffodil.meal.ser?_t=ZS-8y8gkr6ECw6&_r=1" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
+                        <i class="fab fa-tiktok me-2"></i> TikTok
+                    </a> </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase mb-4">Follow Us</h5> <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
+                        <li class="me-3">
+                            <a href="https://www.facebook.com/diumealservice/" target="_blank" class="text-white"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.youtube.com/channel/UCw4XHQJ03DgyooNOkzMBciw" target="_blank" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.tiktok.com/@daffodil.meal.ser?_t=ZS-8y8gkr6ECw6&_r=1" target="_blank" class="text-white"><i class="fab fa-tiktok fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase mb-4">Contact Information</h5> <ul class="list-unstyled">
+                        <li>
+                            <a href="tel:+8801327282082" class="text-white text-decoration-none"><i class="fas fa-phone me-2"></i> Phone: 01327-282082</a> </li>
+                        <li>
+                            <a href="mailto:info.diumealservice@gmail.com" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i> Email: info.diumealservice@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase mb-4">Address </h5> <p>Daffodil Smart City, Berulia, Savar, Dhaka</p> </div>
+            </div>
+            <div class="text-center py-3">
+                <p>© <span id="currentYear"></span> DIU Meal Service. All rights reserved.</p> </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="packageModalLabel">Package Details</h5> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 id="modalPackageName"></h4>
+                    <p id="modalPackageDescription"></p>
+                    <img id="modalPackageImage" src="" alt="" class="img-fluid mb-3">
+                    <div id="modalPackageFeatures">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> <a id="modalEnrollNowBtn" href="#" target="_blank" class="btn btn-primary">Enroll Now</a> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcOdg5iW+0W1WqIJKf" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

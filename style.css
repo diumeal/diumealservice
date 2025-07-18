@@ -1,0 +1,179 @@
+/* Custom CSS */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 100px; /* Adjust based on your header and notification banner height */
+}
+
+/* Header Styling */
+.navbar {
+    background-color: #212529 !important; /* Black header */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #f8f9fa !important; /* Light text color for header */
+}
+
+.header-logo {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+/* Custom Nav Link Hover and Active Effects */
+.custom-nav-link {
+    position: relative;
+    color: #f8f9fa !important; /* Default button text color (white) */
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 10px 15px; /* Add some padding */
+    margin: 0 5px; /* Space between buttons */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: #0d6efd; /* Bootstrap primary blue - distinct from header */
+    border: 1px solid #0d6efd; /* Match border to background */
+}
+
+.custom-nav-link:hover {
+    color: #ffffff !important;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: #0b5ed7; /* Darker blue on hover */
+    border-color: #0b5ed7;
+}
+
+.custom-nav-link.clicked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Light overlay for expanding effect */
+    border-radius: 5px;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Added opacity transition */
+    opacity: 1; /* Ensure it's visible before fading */
+}
+
+.custom-nav-link.clicked {
+    /* Keep the button itself visible during the effect */
+    background-color: #0d6efd; /* Stay blue */
+    transform: scale(1); /* Reset scale to normal during spread */
+}
+
+.custom-nav-link.clicked::before {
+    transform: scale(1.5); /* Expand more for spread */
+    opacity: 0; /* Fade out */
+}
+
+
+/* Notification Banner (Marquee) */
+.notification-banner {
+    position: fixed;
+    top: 66px; /* Below header */
+    width: 100%;
+    z-index: 1020; /* Above main content, below header */
+    white-space: nowrap; /* Ensures text stays in one line for marquee */
+    overflow: hidden; /* Hide overflow for marquee effect */
+    background-color: #17a2b8 !important; /* Bootstrap info blue */
+    color: white !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg') no-repeat center center/cover;
+    min-height: 400px;
+    color: white;
+}
+
+/* Promotional Banner Section */
+.promotional-banner-section {
+    background-color: #f8d7da; /* Light red background for promotion */
+    color: #721c24; /* Dark red text color */
+    padding: 80px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.promotional-banner-section h2 {
+    color: #721c24;
+}
+
+/* Promotional Carousel Section */
+.promotional-carousel-section {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.carousel-item {
+    height: 400px; /* Fixed height for carousel images */
+    background-color: #eee; /* Fallback background */
+}
+
+.carousel-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Section Padding */
+section {
+    padding: 60px 0;
+}
+
+/* Card Styling for Packages */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.package-img {
+    height: 200px; /* Fixed height for package images */
+    object-fit: cover;
+    cursor: pointer; /* Indicate clickable image */
+}
+
+/* Socials Section Styles */
+.social-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #212529; /* Dark background for footer */
+    color: #f8f9fa; /* Light text color */
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0d6efd; /* Bootstrap primary blue on hover */
+}
+
+/* Modal styling for package details */
+#packageModal .modal-body img {
+    max-height: 300px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
