@@ -3,15 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIU Meal Service</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DIU Meal Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for the tables within modals and key features */
+        .package-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .package-table th, .package-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .package-table th {
+            background-color: #f2f2f2;
+        }
+        .price-list {
+            list-style: none;
+            padding: 0;
+        }
+        .price-list li {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
 
     <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <img src="logo.png" alt="DIU Meal Service Logo" class="header-logo"> DIU Meal Service
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,12 +44,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link active" aria-current="page" href="#home">Home</a> </li>
+                        <a class="nav-link custom-nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#packages">Package</a> </li>
+                        <a class="nav-link custom-nav-link" href="#packages">Package</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#socials">Follow Us</a> </li>
-                    </ul>
+                        <a class="nav-link custom-nav-link" href="#socials">Follow Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -34,53 +61,104 @@
         <div class="container">
             <marquee behavior="scroll" direction="left">
                 Our New Offer! 5% off on any package! For a limited time. message for details: 01327282082(WhatsApp)
-            </marquee> </div>
+            </marquee>
+        </div>
     </div>
 
     <main>
         <section id="home" class="py-5 text-center hero-section d-flex align-items-center">
             <div class="container">
-                <h1 class="display-4 text-white">Welcome to DIU Meal Service!</h1> <p class="lead text-white">DIU Meal Service -ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি কমিউনিটি এবং এর বাইরেও পুষ্টিকর, সুস্বাদু এবং সাশ্রয়ী মূল্যের খাবার সরবরাহ করতে প্রতিশ্রুতিবদ্ধ। আমরা শিক্ষাজীবন ও পেশাগত জীবনের ব্যস্ততা বুঝি, তাই আপনার সময় বাঁচাতে এবং প্রতিদিন স্বাস্থ্যকর খাবার নিশ্চিত করতে আমরা বিভিন্ন ধরনের যত্ন সহকারে তৈরি খাবারের প্যাকেজ অফার করি। সুষম দৈনিক খাবার থেকে শুরু করে প্রিমিয়াম বিকল্প এবং ফ্যামিলি প্যাক পর্যন্ত, আমাদের পরিষেবা স্বাস্থ্যবিধি, বৈচিত্র্য এবং সুবিধার উপর গুরুত্ব দেয়, যা স্বাস্থ্যকর খাবারকে সহজ করে তোলে। মানসম্মত ও সুস্বাদু খাবার দিয়ে আপনার দিনকে সতেজ রাখতে আজই বেছে নিন DIU Meal Service!</p> </div>
+                <h1 class="display-4 text-white">Welcome to DIU Meal Service!</h1>
+                <p class="lead text-white">DIU Meal Service -ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি কমিউনিটি এবং এর বাইরেও পুষ্টিকর, সুস্বাদু এবং সাশ্রয়ী মূল্যের খাবার সরবরাহ করতে প্রতিশ্রুতিবদ্ধ। আমরা শিক্ষাজীবন ও পেশাগত জীবনের ব্যস্ততা বুঝি, তাই আপনার সময় বাঁচাতে এবং প্রতিদিন স্বাস্থ্যকর খাবার নিশ্চিত করতে আমরা বিভিন্ন ধরনের যত্ন সহকারে তৈরি খাবারের প্যাকেজ অফার করি। সুষম দৈনিক খাবার থেকে শুরু করে প্রিমিয়াম বিকল্প এবং ফ্যামিলি প্যাক পর্যন্ত, আমাদের পরিষেবা স্বাস্থ্যবিধি, বৈচিত্র্য এবং সুবিধার উপর গুরুত্ব দেয়, যা স্বাস্থ্যকর খাবারকে সহজ করে তোলে। মানসম্মত ও সুস্বাদু খাবার দিয়ে আপনার দিনকে সতেজ রাখতে আজই বেছে নিন DIU Meal Service!</p>
+
+                <h2 class="text-white mt-5">আমাদের সেবার বিশেষত্ব ও নিয়মাবলী:</h2>
+                <div class="d-flex justify-content-center">
+                    <table class="package-table text-white" style="max-width: 800px; background-color: rgba(0, 0, 0, 0.5); border-color: #fff;">
+                        <thead>
+                            <tr>
+                                <th style="border-color: #fff;">বিষয়</th>
+                                <th style="border-color: #fff;">বিবরণ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border-color: #fff;">মিল পরিবর্তন বা অতিরিক্ত মিল</td>
+                                <td style="border-color: #fff;">মিল অফ করতে চাইলে অথবা অতিরিক্ত মিল নিতে চাইলে, আগের রাত ৯টার মধ্যে আমাদের জানাতে হবে। আমাদের কোনো খাবার সংরক্ষণের ফ্রিজ না থাকায় এই নিয়মটি অনুসরণ করা জরুরি।</td>
+                            </tr>
+                            <tr>
+                                <td style="border-color: #fff;">ট্রায়াল মিল</td>
+                                <td style="border-color: #fff;">আমাদের খাবারের মান যাচাই করার জন্য আপনি একদিনের জন্য খাবার নিয়ে চেক করে দেখতে পারেন।</td>
+                            </tr>
+                            <tr>
+                                <td style="border-color: #fff;">খাবারের গুণগত মান</td>
+                                <td style="border-color: #fff;">আমাদের সমস্ত খাবার অভিজ্ঞ শেফ দ্বারা রান্না করা হয় এবং তা সম্পূর্ণ হোম মেড, যা স্বাস্থ্যকর এবং সুস্বাদু খাবারের নিশ্চয়তা দেয়।</td>
+                            </tr>
+                            <tr>
+                                <td style="border-color: #fff;">নিরাপত্তা ও স্বচ্ছতা</td>
+                                <td style="border-color: #fff;">আমাদের রান্নাঘর এবং পরিবেশ সিসি ক্যামেরার আওতায় থাকে। সিসি ক্যামেরার লাইভ রেকর্ড ৫ দিনের জন্য সংরক্ষণ করা হয় এবং কেউ চাইলে তাকে সেই রেকর্ড প্রদান করা হবে, যা আমাদের সেবার স্বচ্ছতা নিশ্চিত করে।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="lead text-white mt-3">Daffodil Mill Service: "Eat well, be well"</p>
+            </div>
         </section>
 
         <section id="promotional-banner" class="py-5 promotional-banner-section text-center">
             <div class="container">
-                <h2 class="mb-4">Special Offer!</h2> <p class="lead mb-4">গ্র্যান্ড ওপেনিং অফার!
+                <h2 class="mb-4">Special Offer!</h2>
+                <p class="lead mb-4">গ্র্যান্ড ওপেনিং অফার!
                     আমাদের নতুন গ্রাহকদের জন্য বিশেষ ছাড়!
                     সকল প্যাকেজে ৫% ছাড়!
                     সীমিত সময়ের জন্য প্রযোজ্য। বিস্তারিত জানতে যোগাযোগ করুন:
-                    WhatsApp: 01327-282082</p> <a href="#packages" class="btn btn-warning btn-lg">View Offer</a> </div>
+                    WhatsApp: 01327-282082</p>
+                <a href="#packages" class="btn btn-warning btn-lg">View Offer</a>
+            </div>
         </section>
-
-        
 
         <section id="packages" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-4">Our Packages</h2> <div class="row">
+                <h2 class="text-center mb-4">Our Packages</h2>
+                <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 shadow-sm package-card">
-                            <img src="silver.jpg" class="card-img-top package-img" alt="Package 1 Image" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package1">
+                            <img src="silver.jpg" class="card-img-top package-img" alt="Package 1 Image">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Package 1: SILVER</h5> <p class="card-text">Nutritious food for families at an affordable price.</p> <div class="mt-auto">
-                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package1" data-image="silver.jpg">View Details</button> <a href="https://forms.gle/yhjunvNngnLVT4p8A" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a> <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%201%20(Standard%20Meal)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a> </div>
+                                <h5 class="card-title">Package 1: SILVER</h5>
+                                <p class="card-text">Nutritious food for families at an affordable price.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#silverPackageModal">View Details</button>
+                                    <a href="https://forms.gle/yhjunvNngnLVT4p8A" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a>
+                                    <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%201%20(Standard%20Meal)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 shadow-sm package-card">
-                            <img src="golden.jpg" class="card-img-top package-img" alt="Package 2 Image" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package2">
+                            <img src="golden.jpg" class="card-img-top package-img" alt="Package 2 Image">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Package 2: GOLDEN</h5> <p class="card-text">Daily balanced and healthy meals.</p> <div class="mt-auto">
-                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package2" data-image="golden.jpg">View Details</button> <a href="https://forms.gle/Yamb8DfmaPAXAFCx6" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a> <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%202%20(Premium%20Deal)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a> </div>
+                                <h5 class="card-title">Package 2: GOLDEN</h5>
+                                <p class="card-text">Daily balanced and healthy meals.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#goldenPackageModal">View Details</button>
+                                    <a href="https://forms.gle/Yamb8DfmaPAXAFCx6" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a>
+                                    <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%202%20(Premium%20Deal)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 shadow-sm package-card">
-                            <img src="platinium.jpg" class="card-img-top package-img" alt="Package 3 Image" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package3">
+                            <img src="platinium.jpg" class="card-img-top package-img" alt="Package 3 Image">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Package 3: PLATINIUM</h5> <p class="card-text">High-quality food with extra benefits.</p> <div class="mt-auto">
-                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#packageModal" data-package-id="package3" data-image="platinium.jpg">View Details</button> <a href="https://forms.gle/2FB1X7gwGD23hjwU8" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a> <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%203%20(Family%20Pack)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a> </div>
+                                <h5 class="card-title">Package 3: PLATINIUM</h5>
+                                <p class="card-text">High-quality food with extra benefits.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-info w-100 mb-2 view-details-btn" data-bs-toggle="modal" data-bs-target="#platiniumPackageModal">View Details</button>
+                                    <a href="https://forms.gle/2FB1X7gwGD23hjwU8" target="_blank" class="btn btn-primary w-100 mb-2">Enroll Now</a>
+                                    <a href="https://wa.me/8801327282082?text=I%20want%20to%20know%20about%20Package%203%20(Family%20Pack)." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp"></i> WhatsApp Message</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,25 +166,22 @@
             </div>
         </section>
 
-        <section id="food" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-4">Our Food Menu</h2> <div class="row">
-                    <div class="col-md-6 offset-md-3 text-center">
-                        <p>You can add descriptions, images, and price lists of our various foods here.</p> </div>
-                </div>
-            </div>
-        </section>
+      
 
         <section id="socials" class="py-5 bg-dark text-white text-center">
             <div class="container">
-                <h2 class="mb-4">Join Us on Social Media!</h2> <div class="d-flex justify-content-center flex-wrap">
+                <h2 class="mb-4">Join Us on Social Media!</h2>
+                <div class="d-flex justify-content-center flex-wrap">
                     <a href="https://www.facebook.com/diumealservice/" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
                         <i class="fab fa-facebook-f me-2"></i> Facebook
-                    </a> <a href="https://www.youtube.com/channel/UCw4XHQJ03DgyooNOkzMBciw" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCw4XHQJ03DgyooNOkzMBciw" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
                         <i class="fab fa-youtube me-2"></i> YouTube
-                    </a> <a href="https://www.tiktok.com/@daffodil.meal.ser?_t=ZS-8y8gkr6ECw6&_r=1" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
+                    </a>
+                    <a href="https://www.tiktok.com/@daffodil.meal.ser?_t=ZS-8y8gkr6ECw6&_r=1" target="_blank" class="btn btn-outline-light btn-lg m-2 social-btn">
                         <i class="fab fa-tiktok me-2"></i> TikTok
-                    </a> </div>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -116,7 +191,8 @@
         <div class="container text-center text-md-start">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="text-uppercase mb-4">Follow Us</h5> <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
+                    <h5 class="text-uppercase mb-4">Follow Us</h5>
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
                         <li class="me-3">
                             <a href="https://www.facebook.com/diumealservice/" target="_blank" class="text-white"><i class="fab fa-facebook-f fa-2x"></i></a>
                         </li>
@@ -129,42 +205,250 @@
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h5 class="text-uppercase mb-4">Contact Information</h5> <ul class="list-unstyled">
+                    <h5 class="text-uppercase mb-4">Contact Information</h5>
+                    <ul class="list-unstyled">
                         <li>
-                            <a href="tel:+8801327282082" class="text-white text-decoration-none"><i class="fas fa-phone me-2"></i> Phone: 01327-282082</a> </li>
+                            <a href="tel:+8801327282082" class="text-white text-decoration-none"><i class="fas fa-phone me-2"></i> Phone: 01327-282082</a>
+                        </li>
                         <li>
                             <a href="mailto:info.diumealservice@gmail.com" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i> Email: info.diumealservice@gmail.com</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h5 class="text-uppercase mb-4">Address </h5> <p>Daffodil Smart City, Berulia, Savar, Dhaka</p> </div>
+                    <h5 class="text-uppercase mb-4">Address </h5>
+                    <p>Daffodil Smart City, Berulia, Savar, Dhaka</p>
+                </div>
             </div>
             <div class="text-center py-3">
-                <p>© <span id="currentYear"></span> DIU Meal Service. All rights reserved.</p> </div>
+                <p>© <span id="currentYear"></span> DIU Meal Service. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+    <!-- Modals for Package Details -->
+    <!-- Silver Package Modal -->
+    <div class="modal fade" id="silverPackageModal" tabindex="-1" aria-labelledby="silverPackageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="packageModalLabel">Package Details</h5> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="silverPackageModalLabel">Package 1: SILVER Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h4 id="modalPackageName"></h4>
-                    <p id="modalPackageDescription"></p>
-                    <img id="modalPackageImage" src="" alt="" class="img-fluid mb-3">
-                    <div id="modalPackageFeatures">
-                        </div>
+                    <h4 class="mb-3">সপ্তাহিক খাবারের তালিকা</h4>
+                    <table class="package-table">
+                        <thead>
+                            <tr>
+                                <th>দিনের নাম</th>
+                                <th>দুপুর</th>
+                                <th>রাত্রি</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>শনিবার</td>
+                                <td>মাছের ঝোল+ভাত</td>
+                                <td>খিচুড়ি + ভর্তা</td>
+                            </tr>
+                            <tr>
+                                <td>রবিবার</td>
+                                <td>মাংসভুনা+ভাত+ডাল</td>
+                                <td>আলু ভর্তা+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>সোমবার</td>
+                                <td>ডিম ভুনা + ভাত+ডাল</td>
+                                <td>মাছের লটপটি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>মঙ্গলবার</td>
+                                <td>মাংসভুনা+ভাত+ডাল</td>
+                                <td>খিচুড়ি + ভর্তা</td>
+                            </tr>
+                            <tr>
+                                <td>বুধবার</td>
+                                <td>মাছের ঝোল+ভাত</td>
+                                <td>ভাজি + ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>বৃহস্পতিবার</td>
+                                <td>মাংসভুনা+ভাত+ডাল</td>
+                                <td>মাছের লটপটি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>শুক্রবার</td>
+                                <td>বিরিয়ানি(খাসি)</td>
+                                <td>আলু ভর্তা+ভাত+ডাল</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="mb-3">প্যাকেজের মূল্য:</h4>
+                    <ul class="price-list">
+                        <li>৭ দিনের জন্যঃ ৯৮৫ টাকা মাত্র</li>
+                        <li>১৫ দিনের জন্যঃ ১৯৪০ টাকা মাত্র</li>
+                        <li>৩০ দিনের জন্যঃ ৩৭৭০ টাকা মাত্র</li>
+                    </ul>
+                    <p>এছাড়াও, এই প্যাকেজে ফ্রি ডেলিভারি দেওয়া হচ্ছে</p>
+                    <p>Daffodil Mill Service: "Eat well, be well"</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> <a id="modalEnrollNowBtn" href="#" target="_blank" class="btn btn-primary">Enroll Now</a> </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://forms.gle/yhjunvNngnLVT4p8A" target="_blank" class="btn btn-primary">Enroll Now</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcOdg5iW+0W1WqIJKf" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <!-- Golden Package Modal -->
+    <div class="modal fade" id="goldenPackageModal" tabindex="-1" aria-labelledby="goldenPackageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="goldenPackageModalLabel">Package 2: GOLDEN Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mb-3">সপ্তাহিক খাবারের তালিকা</h4>
+                    <table class="package-table">
+                        <thead>
+                            <tr>
+                                <th>দিনের নাম</th>
+                                <th>দুপুর</th>
+                                <th>রাত্রি</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>শনিবার</td>
+                                <td>ভাজি+মাছের ঝোল+ভাত</td>
+                                <td>ডিম ভাজি+খিচুড়ি</td>
+                            </tr>
+                            <tr>
+                                <td>রবিবার</td>
+                                <td>মাংসভুনা+ভাত+ডাল</td>
+                                <td>আলু ভর্তা+ভাত+ডাল+ডিম ভাজি</td>
+                            </tr>
+                            <tr>
+                                <td>সোমবার</td>
+                                <td>ডিম ভুনা + ভাজি+ভাত+ডাল</td>
+                                <td>মাছের লটপটি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>মঙ্গলবার</td>
+                                <td> মাংসভুনা+ভাত+ডাল</td>
+                                <td>খিচুড়ি+বেগুন ভাজি+ভর্তা</td>
+                            </tr>
+                            <tr>
+                                <td>বুধবার</td>
+                                <td>ভাজি+মাছের ঝোল+ভাত+ডাল</td>
+                                <td>ডিম ভুনা + ভাজি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>বৃহস্পতিবার</td>
+                                <td>মাংসভুনা+ভাত+ডাল</td>
+                                <td>মাছের লটপটি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>শুক্রবার</td>
+                                <td>বিরিয়ানি(খাসি)</td>
+                                <td>আলু ভর্তা+ভাত+ডাল</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="mb-3">প্যাকেজের মূল্য:</h4>
+                    <ul class="price-list">
+                        <li>৭ দিনের জন্যঃ ১১০৫ টাকা মাত্র</li>
+                        <li>১৫ দিনের জন্যঃ ২১৯০ টাকা মাত্র</li>
+                        <li>৩০ দিনের জন্যঃ ৪২৮০ টাকা মাত্র</li>
+                    </ul>
+                    <p>Daffodil Mill Service: "Eat well, be well"</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://forms.gle/Yamb8DfmaPAXAFCx6" target="_blank" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Platinium Package Modal -->
+    <div class="modal fade" id="platiniumPackageModal" tabindex="-1" aria-labelledby="platiniumPackageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="platiniumPackageModalLabel">Package 3: PLATINIUM Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mb-3">সপ্তাহিক খাবারের তালিকা</h4>
+                    <table class="package-table">
+                        <thead>
+                            <tr>
+                                <th>দিনের নাম</th>
+                                <th>দুপুর</th>
+                                <th>রাত্রি</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>শনিবার</td>
+                                <td>ভাজি+মাছের ভুনা+ভাত+ডাল</td>
+                                <td>ডিম ভাজি+খিচুড়ি + ভর্তা</td>
+                            </tr>
+                            <tr>
+                                <td>রবিবার</td>
+                                <td>মাংসভুনা+ভাত+ডাল</td>
+                                <td>বাদাম ভর্তা+আলু ভর্তা+ভাত+ডাল+ডিম ভাজি</td>
+                            </tr>
+                            <tr>
+                                <td>সোমবার</td>
+                                <td>গরুর গোস্ত + ভাজি +ভাত+ডাল</td>
+                                <td>মাছের লটপটি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>মঙ্গলবার</td>
+                                <td>মাংসভুনা+ভাত+ডাল</td>
+                                <td>খিচুড়ি+মাংস ভুনা</td>
+                            </tr>
+                            <tr>
+                                <td>বুধবার</td>
+                                <td>ভাজি+মাছের ভুনা+ভাত+ডাল</td>
+                                <td>ডিম ভুনা + ভাজি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>বৃহস্পতিবার</td>
+                                <td>ডিম ভুনা + মাছ ভাজা + ভাত + ডাল</td>
+                                <td>মাছের লটপটি+ভাত+ডাল</td>
+                            </tr>
+                            <tr>
+                                <td>শুক্রবার</td>
+                                <td>বিরিয়ানি(খাসি)</td>
+                                <td>বাদাম ভর্তা+ভাত+ডাল+ডিম ভাজি</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="mb-3">প্যাকেজের মূল্য:</h4>
+                    <ul class="price-list">
+                        <li>৭ দিনের জন্যঃ ১২১০ টাকা মাত্র</li>
+                        <li>১৫ দিনের জন্যঃ ২৪১৫ টাকা মাত্র</li>
+                        <li>৩০ দিনের জন্যঃ ৪৭৩০ টাকা মাত্র</li>
+                    </ul>
+                    <p>Daffodil Mill Service: "Eat well, be well"</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://forms.gle/2FB1X7gwGD23hjwU8" target="_blank" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcOdg5iW+0W1WqIJKf" crossorigin="anonymous"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
