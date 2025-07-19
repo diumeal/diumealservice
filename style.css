@@ -1,179 +1,341 @@
-/* Custom CSS */
-
-/* General Body Styling */
+/* General Body & Typography */
 body {
-    font-family: Arial, sans-serif;
-    padding-top: 100px; /* Adjust based on your header and notification banner height */
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Light background for overall freshness */
 }
 
-/* Header Styling */
+/* Header & Navigation Bar */
 .navbar {
-    background-color: #212529 !important; /* Black header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.navbar-brand, .navbar-nav .nav-link {
-    color: #f8f9fa !important; /* Light text color for header */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff !important; /* Ensure brand text is white */
 }
 
 .header-logo {
-    height: 40px; /* Adjust logo size */
+    height: 40px; /* Adjust as needed */
     margin-right: 10px;
 }
 
-/* Custom Nav Link Hover and Active Effects */
 .custom-nav-link {
-    position: relative;
-    color: #f8f9fa !important; /* Default button text color (white) */
-    text-decoration: none;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    padding: 10px 15px; /* Add some padding */
-    margin: 0 5px; /* Space between buttons */
-    border-radius: 5px; /* Slightly rounded corners */
-    background-color: #0d6efd; /* Bootstrap primary blue - distinct from header */
-    border: 1px solid #0d6efd; /* Match border to background */
+    font-weight: 500;
+    margin-right: 15px; /* Spacing between nav items */
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: color 0.3s ease-in-out;
 }
 
-.custom-nav-link:hover {
+.custom-nav-link:hover,
+.custom-nav-link.active {
     color: #ffffff !important;
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    background-color: #0b5ed7; /* Darker blue on hover */
-    border-color: #0b5ed7;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
-.custom-nav-link.clicked::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Light overlay for expanding effect */
-    border-radius: 5px;
-    z-index: -1;
-    transform: scale(0);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Added opacity transition */
-    opacity: 1; /* Ensure it's visible before fading */
-}
-
-.custom-nav-link.clicked {
-    /* Keep the button itself visible during the effect */
-    background-color: #0d6efd; /* Stay blue */
-    transform: scale(1); /* Reset scale to normal during spread */
-}
-
-.custom-nav-link.clicked::before {
-    transform: scale(1.5); /* Expand more for spread */
-    opacity: 0; /* Fade out */
-}
-
-
-/* Notification Banner (Marquee) */
+/* Notification Banner */
 .notification-banner {
-    position: fixed;
-    top: 66px; /* Below header */
-    width: 100%;
-    z-index: 1020; /* Above main content, below header */
-    white-space: nowrap; /* Ensures text stays in one line for marquee */
-    overflow: hidden; /* Hide overflow for marquee effect */
-    background-color: #17a2b8 !important; /* Bootstrap info blue */
-    color: white !important;
+    background-color: #007bff !important; /* Bootstrap primary blue */
+    color: #ffffff !important;
+    font-weight: 500;
+    margin-top: 56px; /* Adjust based on navbar height to prevent overlap */
+    padding: 10px 0;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg') no-repeat center center/cover;
-    min-height: 400px;
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg') no-repeat center center; /* Add a background image for impact, replace 'hero-bg.jpg' with your image */
+    background-size: cover;
+    min-height: 70vh; /* Make it taller for a more impactful first impression */
+    position: relative;
+    padding-top: 100px; /* Push content down from the fixed navbar */
 }
 
-/* Promotional Banner Section */
-.promotional-banner-section {
-    background-color: #f8d7da; /* Light red background for promotion */
-    color: #721c24; /* Dark red text color */
-    padding: 80px 0;
-    font-size: 1.2em;
-    font-weight: bold;
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability on image */
 }
 
-.promotional-banner-section h2 {
-    color: #721c24;
-}
-
-/* Promotional Carousel Section */
-.promotional-carousel-section {
-    padding-top: 30px;
-    padding-bottom: 60px;
-}
-
-.carousel-item {
-    height: 400px; /* Fixed height for carousel images */
-    background-color: #eee; /* Fallback background */
-}
-
-.carousel-img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-caption {
-    background-color: rgba(0,0,0,0.6);
+.hero-section p.lead {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly darker background for text readability */
     padding: 15px;
     border-radius: 8px;
 }
 
-/* Section Padding */
-section {
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Key Features Table within Hero */
+.hero-section .package-table {
+    border: 1px solid rgba(255, 255, 255, 0.3) !important; /* Lighter border for contrast */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures border-radius applies to corners */
+    margin-bottom: 30px;
+}
+
+.hero-section .package-table th,
+.hero-section .package-table td {
+    border-color: rgba(255, 255, 255, 0.2) !important; /* Lighter cell borders */
+    color: #ffffff;
+}
+
+.hero-section .package-table th {
+    background-color: rgba(0, 123, 255, 0.6) !important; /* Blue header for table */
+    font-weight: 600;
+}
+
+/* Promotional Banner */
+.promotional-banner-section {
+    background-color: #ffc107; /* Bootstrap warning yellow */
+    color: #333;
     padding: 60px 0;
+    text-align: center;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for a subtle lift */
 }
 
-/* Card Styling for Packages */
-.card {
+.promotional-banner-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #212529; /* Darker text for contrast */
+}
+
+.promotional-banner-section p.lead {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.promotional-banner-section .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px; /* Pill-shaped button */
+    transition: all 0.3s ease;
+}
+
+.promotional-banner-section .btn:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Package Cards */
+#packages .card {
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+#packages .card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* More pronounced shadow on hover */
 }
 
-.package-img {
-    height: 200px; /* Fixed height for package images */
-    object-fit: cover;
-    cursor: pointer; /* Indicate clickable image */
+.package-card .card-img-top {
+    height: 200px; /* Fixed height for consistent image size */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-bottom: 1px solid #eee;
 }
 
-/* Socials Section Styles */
+.package-card .card-body {
+    padding: 25px;
+}
+
+.package-card .card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #007bff; /* Highlight package titles with brand color */
+    margin-bottom: 15px;
+}
+
+.package-card .card-text {
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows the text to grow and push buttons to bottom */
+}
+
+.package-card .btn {
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px; /* Spacing between buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.package-card .btn-info {
+    background-color: #17a2b8; /* Bootstrap info color */
+    border-color: #17a2b8;
+}
+
+.package-card .btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.package-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.package-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.package-card .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.package-card .btn-success:hover {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+/* Socials Section */
+#socials {
+    background-color: #343a40 !important; /* Darker background for distinction */
+    padding: 80px 0;
+}
+
+#socials h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
 .social-btn {
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 50px; /* Circular buttons */
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    min-width: 180px; /* Ensure consistent width */
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .social-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+    background-color: #007bff; /* Highlight on hover */
+    border-color: #007bff;
+    color: #ffffff !important;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: #212529; /* Dark background for footer */
-    color: #f8f9fa; /* Light text color */
+    background-color: #212529 !important; /* Even darker footer */
+    color: #adb5bd; /* Lighter grey text */
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
-footer a {
-    color: #f8f9fa;
+footer h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #adb5bd;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-footer a:hover {
-    color: #0d6efd; /* Bootstrap primary blue on hover */
+footer ul li a:hover {
+    color: #007bff; /* Brand color on hover */
 }
 
-/* Modal styling for package details */
-#packageModal .modal-body img {
-    max-height: 300px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
+footer .fab, footer .fas {
+    font-size: 1.8rem; /* Larger icons */
+    margin-right: 8px;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-body h4 {
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.modal-body .package-table {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modal-body .package-table th {
+    background-color: #e9ecef; /* Light grey header for modal tables */
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-body .price-list {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+    padding-top: 20px;
+}
+
+/* Responsive Adjustments (Optional but Recommended) */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+
+    .promotional-banner-section h2 {
+        font-size: 2rem;
+    }
+
+    .social-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
